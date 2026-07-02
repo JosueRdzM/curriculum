@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josué Rodríguez — Currículum</title>
+<style>
+  :root{
+    --bg: #f4f1e9;
+    --panel: #3d3b2c;
+    --panel-2: #4a4736;
+    --accent: #a68b4a;
+    --text-dark: #2c2a22;
+    --text-body: #3f3d33;
+    --rule: #cdc6ae;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--text-body);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 1.55;
+  }
+
+  .page{
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 0 48px 0;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+    color: #fff;
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 36px;
+  }
+
+  .avatar{
+    flex: 0 0 auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #6b674f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: #f4f1e9;
+    border: 3px solid rgba(255,255,255,0.35);
+  }
+
+  .header-text h1{
+    margin: 0 0 6px 0;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+  }
+
+  .header-text .role{
+    margin: 0 0 14px 0;
+    font-size: 15px;
+    color: #e8e3d2;
+  }
+
+  .contact-line{
+    margin: 0;
+    font-size: 13px;
+    color: #f1eee2;
+  }
+
+  .contact-line span{
+    display: inline-block;
+    margin-right: 14px;
+  }
+
+  .contact-line span::before{
+    content: "•";
+    color: var(--accent);
+    margin-right: 6px;
+  }
+
+  /* ---------- Body content ---------- */
+  main{
+    padding: 0 48px;
+  }
+
+  section{
+    margin-bottom: 28px;
+  }
+
+  h2{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--panel);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 6px;
+    margin: 0 0 14px 0;
+  }
+
+  p{
+    margin: 0 0 10px 0;
+    font-size: 14.5px;
+    text-align: justify;
+  }
+
+  .skill-row{
+    margin: 0 0 10px 0;
+    font-size: 14.5px;
+  }
+
+  .skill-row .label{
+    color: var(--panel);
+    font-weight: 700;
+  }
+
+  .job-title{
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+  }
+
+  .job-dates{
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+
+  ul{
+    margin: 0 0 6px 0;
+    padding-left: 20px;
+  }
+
+  li{
+    font-size: 14.5px;
+    margin-bottom: 6px;
+    text-align: justify;
+  }
+
+  li strong{
+    color: var(--text-dark);
+  }
+
+  .project-name{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 2px 0;
+  }
+
+  .project-link{
+    font-size: 13px;
+    color: var(--accent);
+    margin: 0 0 8px 0;
+    word-break: break-all;
+  }
+
+  .project-block{
+    margin-bottom: 18px;
+  }
+
+  .apt-list{
+    columns: initial;
+    padding-left: 20px;
+  }
+
+  footer.note{
+    padding: 24px 48px 0 48px;
+    font-size: 11px;
+    color: #8a8570;
+  }
+
+  @media (max-width: 600px){
+    header{ flex-direction: column; text-align: center; padding: 32px 24px; }
+    main{ padding: 0 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <img src="Foto_cv.jpeg" class="avatar">
+    <div class="header-text">
+      <h1>Josué Rodríguez</h1>
+      <p class="role">Ingeniero en Sistemas Computacionales</p>
+      <p class="contact-line">
+        <span>Coyoacán, CDMX</span>
+        <span><a href="tel:+525620741255" target="_blank" class="project-link">(+52) 56 2074 1255</a></span>
+        <span><a href="mailto:josuearqee@gmail.com" target="_blank" class="project-link">josuearqee@gmail.com</a></span><br>
+        <span><a href="www.linkedin.com/in/josué-rdz-app" target="_blank" class="project-link">www.linkedin.com/in/josué-rdz-app</a></span>
+        <span><a href="https://github.com/JosueRdzM" target="_blank" class="project-link">https://github.com/JosueRdzM</a></span>
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+    <!--<section>
+      <h2>Perfil profesional</h2>
+      <p>Ingeniero en Sistemas Computacionales en formación con sólida trayectoria en gestión operativa, administración de datos y optimización de procesos. Especializado en el diseño e implementación de flujos eficientes mediante documentación rigurosa y un enfoque analítico. Capacidad probada para resolver problemas complejos interconectando herramientas digitales y automatizaciones (n8n, Excel avanzado, Notion) para eliminar el error humano y reducir tiempos operativos.</p>
+    </section>-->
+
+    <section>
+      <h2>Perfil profesional</h2>
+      <p>Ingeniero en Sistemas Computacionales en formación (UTEL) especializado en arquitectura de software, automatización de procesos y desarrollo de soluciones lógicas. Capacidad probada en la generación de código y desarrollo de herramientas digitales interactivas utilizando Python, JavaScript, HTML5 y CSS3 , así como en el diseño de pruebas lógicas y optimización de bases de datos relacionales mediante SQL. Experiencia sólida en el análisis de requerimientos, estructuración de flujos eficientes y documentación rigurosa de componentes tecnológicos para mitigar errores. Profesional con fundamentos sólidos en metodologías ágiles (Scrum), pensamiento crítico y alta capacidad analítica para integrarse con éxito en equipos de desarrollo de software.</p>
+    </section>
+
+    <!--<section>
+      <h2>Habilidades técnicas</h2>
+      <p class="skill-row"><span class="label">Automatización:</span> n8n (flujos de clasificación, reenvío y sincronización de datos), Notion (matrices y bases de datos).</p>
+      <p class="skill-row"><span class="label">Análisis de datos:</span> Microsoft Excel avanzado — interconexión de documentos, fórmulas lógicas, validación de datos y control financiero.</p>
+      <p class="skill-row"><span class="label">Desarrollo web:</span> HTML5, CSS3, JavaScript (nivel básico).</p>
+      <p class="skill-row"><span class="label">Herramientas:</span> OBS Studio, Adobe Premiere Pro, After Effects (básico), diagnóstico de sistemas.</p>
+      <p class="skill-row"><span class="label">Idiomas:</span> Español (nativo), inglés (básico — lectura técnica).</p>
+    </section>-->
+
+    <section>
+      <h2>Herramientas Técnicas</h2>
+      <ul>
+        <li class="skill-row">Excel Avanzado</li>
+        <li class="skill-row">SQL</li>
+        <li class="skill-row">Python</li>
+        <li class="skill-row">Pandas</li>
+        <li class="skill-row">Selenium</li>
+        <li class="skill-row">Power BI (Básico)</li>
+        <li class="skill-row">HTML 5</li>
+        <li class="skill-row">CSS 3</li>
+        <li class="skill-row">JavaScript</li>
+        <li class="skill-row">GitHub</li>
+        <li class="skill-row">n8n</li>
+        <li class="skill-row">Inglés B1</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Aptitudes Profesionales</h2>
+      <ul>
+        <li class="skill-row">Trabajo en Equipo</li>
+        <li class="skill-row">Pensamiento Crítico</li>
+        <li class="skill-row">Lógica Analítica</li>
+        <li class="skill-row">Resiliencia</li>
+        <li class="skill-row">Escucha Activa</li>
+        <li class="skill-row">Adaptabilidad</li>
+        <li class="skill-row">Comunicación Efectiva</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Conocimientos Técnicos</h2>
+      <ul>
+        <li class="skill-row">Análisis de Datos</li>
+        <li class="skill-row">Automatizaciones de procesos</li>
+        <li class="skill-row">Gestión y documentación de flujos operativos</li>
+        <li class="skill-row">Scrum (Fundamentos)</li>
+        <li class="skill-row">Visualización de datos</li>
+        <li class="skill-row">Data Contracts</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Proyectos tecnológicos</h2>
+
+      <div class="project-block">
+        <p class="project-name">Check List Operativo Digital</p>
+        <p class="project-link">josuerdzm.github.io/checklistayv.github.io</p>
+        <ul>
+          <li><strong>Problema:</strong> Alta tasa de errores y tiempos rezagados en procesos de montaje y desmontaje.</li>
+          <li><strong>Solución:</strong> Herramienta digital interactiva desarrollada con HTML, CSS y JavaScript para el seguimiento de tareas operativas.</li>
+          <li><strong>Resultado:</strong> Reducción del 20% en tiempo de ejecución de montajes y disminución significativa del margen de error humano.</li>
+        </ul>
+      </div>
+
+      <div class="project-block">
+        <p class="project-name">Flujos de Automatización Autónomos</p>
+        <p class="project-link">Proyectos personales · Portafolio</p>
+        <ul>
+          <li>Diseño e integración de flujos de trabajo automatizados en n8n para clasificación inteligente y reenvío autónomo de información.</li>
+          <li>Automatizaciones diarias conectando y procesando matrices de datos en Notion para mejorar la organización del flujo de tareas operativas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experiencia laboral</h2>
+      <p class="job-title">Gestión Administrativa, Financiera y Operativa — Arqee S.A. de C.V.</p>
+      <p class="job-dates">2017 – 2026</p>
+      <p>Responsable de la gestión integral de flujos financieros, control presupuestal y reportería ejecutiva para proyectos de inversión inmobiliaria.
+
+        <br><br>Logros principales:</p>
+      <ul>
+        <li>Por medio de un análisis preciso en la información, se detectó un error de 17M de pesos, durante elaboración de un incremento presupuestal.</li>
+        <li>Diseñé y automaticé tableros de control en Excel interconectando bases de datos de ingresos, estados de cuenta y flujos de efectivo, logrando una reducción del 98% en errores humanos y acortando significativamente los tiempos de procesamiento.</li>
+        <li>Gestioné y optimicé la cartera de clientes de inversión, asegurando el cumplimiento de cronogramas de pago y proyecciones de flujo de efectivo.</li>
+        <li>Elaboré reportes ejecutivos para junta directiva y socios inversionistas, comunicando estatus financiero, avances de obra y rendimientos del proyecto.</li>
+        <li>Coordiné el control de costos por partida con el área de operaciones para la validación y autorización de pagos a contratistas.</li>
+      </ul>
+      <br>
+      <p class="job-title">Asesor de Ventas — Tecnología Apple</p>
+      <p class="job-dates">2016 - 2017</p>
+      <p>Atención y asesoría especializada a clientes en productos del ecosistema Apple. Candidato seleccionado para promoción al puesto de Subgerente previo a la salida. Aptitudes adquiridas: Escucha Activa, Consultor de soluciones.</p>
+      <br>
+      <p class="job-title">Promotor de Marca — Lenovo</p>
+      <p class="job-dates">2016</p>
+      <p>Promoción y demostración de productos Lenovo en punto de venta.</p>
+      <br>
+      <p class="job-title">Asesor de Ventas — Best Buy</p>
+      <p class="job-dates">2015 - 2016</p>
+      <p>Atención al cliente y asesoría en productos de tecnología y electrónico de consumo.</p>
+      <br>
+      <p class="job-title">Capturista de Datos — Luzware</p>
+      <p class="job-dates">2015</p>
+      <p>Captura, organización y validación de información en sistemas administrativos.</p>
+      <br>
+      <p class="job-title">Personal de Taquilla / Servicio al Cliente — Cinemex</p>
+      <p class="job-dates">2014 - 2015</p>
+      <p>Primer contacto profesional con entornos de alto volumen operativo y atención al cliente.</p>
+    </section>
+
+    <section>
+      <h2>Formación académica</h2>
+      <p class="job-title">Ingeniería en Sistemas Computacionales - UTEL</p>
+      <p class="job-dates">2025 – 2027 · En curso</p>
+      <p>Formación enfocada en arquitectura de software, automatización de infraestructura y desarrollo de soluciones lógicas. El proceso académico ha reforzado mi interés por la gestión y documentación de procesos como disciplina central.</p>
+    </section>
+
+  </main>
+
+</div>
+</body>
+</html>
