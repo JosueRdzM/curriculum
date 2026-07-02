@@ -2,7 +2,7 @@
 
 ¡Bienvenido a mi repositorio central de trayectoria profesional! Este proyecto alberga mi currículum operativo y tecnológico en un formato web responsivo y de código abierto.
 
-Puedes ver la versión en vivo aquí: [josuerdzm.github.io/checklistayv.github.io](https://josuerdzm.github.io/checklistayv.github.io)
+Puedes ver la versión en vivo aquí: ([https://josuerdzm.github.io/checklistayv.github.io](https://josuerdzm.github.io/curriculum/))
 
 ---
 
